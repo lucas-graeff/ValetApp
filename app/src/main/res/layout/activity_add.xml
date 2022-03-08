@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/input_Make"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:hint="Make"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+    <EditText
+        android:id="@+id/input_Plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="License Plate"
+        app:layout_constraintTop_toBottomOf="@+id/input_Year"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/input_Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        app:layout_constraintTop_toBottomOf="@+id/input_Model"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+                android:id="@+id/input_Model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Model"
+                app:layout_constraintTop_toBottomOf="@+id/input_Make"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/btn_create_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_Plate" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
